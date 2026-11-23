@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Your Box | Mauz Lagi</title>
+<meta name="description" content="Pilih 2, 3, atau 4 rasa keripik pisang Mauz Lagi dan pesan lewat WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="box">
+<a class="skip" href="#main">Lewati ke konten</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="container page-head"><h1 class="t-hero">Build Your Box</h1><p class="t-lead">Pilih 2, 3, atau 4 rasa, atur jumlahnya, lalu pesan lewat WhatsApp.</p></section>
+<section class="section" style="padding-top:1.5rem"><div class="container order-layout">
+<div class="grid" style="align-content:start;gap:2rem">
+<div><h2 class="t-h2" style="margin-bottom:1rem">1. Berapa rasa?</h2>
+<div class="size-picker" id="size-picker" role="group" aria-label="Jumlah rasa"><button class="size-btn" type="button" data-size="2" aria-pressed="true">2 rasa</button><button class="size-btn" type="button" data-size="3" aria-pressed="false">3 rasa</button><button class="size-btn" type="button" data-size="4" aria-pressed="false">4 rasa</button></div></div>
+<div><h2 class="t-h2">2. Pilih rasa</h2><p class="small muted" id="box-hint" aria-live="polite" style="margin:.25rem 0 1rem"></p>
+<div class="grid" id="pick-grid" style="grid-template-columns:repeat(2,1fr);gap:1rem"></div></div></div>
+<aside class="card summary" aria-label="Ringkasan box"><h2 class="t-h2">Box kamu</h2>
+<div id="box-summary" aria-live="polite"></div>
+<div class="total"><span>Subtotal</span><span id="subtotal">Rp0</span></div>
+<div class="field" id="address-field"><label for="address">Alamat pengiriman (opsional)</label><textarea id="address" rows="3" autocomplete="street-address" placeholder="Jalan, RT/RW, kecamatan"></textarea><p class="error" id="address-error" role="alert"></p></div>
+<p class="error" id="box-error" role="alert"></p>
+<button class="btn btn--primary" type="button" id="wa-box">Pesan via WhatsApp</button>
+<p class="small muted">Harga: Rp25.000 per rasa.</p></aside>
+</div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/products.js"></script><script src="js/main.js"></script><script src="js/order.js"></script>
+</body>
+</html>

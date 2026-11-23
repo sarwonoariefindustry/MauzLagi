@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order & Contact | Mauz Lagi</title>
+<meta name="description" content="Pesan keripik pisang Mauz Lagi lewat WhatsApp. Rp25.000 per rasa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="order">
+<a class="skip" href="#main">Lewati ke konten</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="container page-head"><h1 class="t-hero">Order &amp; Contact</h1><p class="t-lead">Pilih rasa dan jumlahnya. Pesananmu akan terkirim ke WhatsApp.</p></section>
+<section class="section" style="padding-top:1.5rem"><div class="container order-layout">
+<div class="order-list" id="order-list" aria-label="Pilih produk"></div>
+<aside class="card summary" aria-label="Ringkasan pesanan"><h2 class="t-h2">Ringkasan pesanan</h2>
+<div id="summary-items" aria-live="polite"></div>
+<div class="total"><span>Subtotal</span><span id="subtotal">Rp0</span></div>
+<div class="field" style="margin-top:.5rem"><label for="cust-name">Nama (opsional)</label><input id="cust-name" type="text" autocomplete="name"></div>
+<div class="field" id="address-field"><label for="address">Alamat pengiriman (opsional)</label><textarea id="address" rows="3" autocomplete="street-address" placeholder="Jalan, RT/RW, kecamatan"></textarea><p class="error" id="address-error" role="alert"></p></div>
+<p class="error" id="order-error" role="alert"></p>
+<button class="btn btn--primary" type="button" id="wa-order">Pesan via WhatsApp</button>
+<p class="small muted">Area pengiriman: sekitar Kabupaten Bogor.</p></aside>
+</div></section>
+<section class="section section--tint"><div class="container"><div class="section-head"><h2 class="t-h1">Pertanyaan umum</h2></div><div class="faq" data-faq style="max-width:760px"><div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa0" id="fq0">Bagaimana cara memesan?</button><div class="faq-a" id="fa0" role="region" aria-labelledby="fq0"><div><p>Pilih rasa dan jumlahnya di halaman ini, lalu tekan tombol WhatsApp. Pesananmu sudah tertulis otomatis di chat.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa1" id="fq1">Di mana area pengiriman?</button><div class="faq-a" id="fa1" role="region" aria-labelledby="fq1"><div><p>Sekitar Kabupaten Bogor. Cantumkan alamatmu di pesan agar bisa dicek.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa2" id="fq2">Berapa harga per rasa?</button><div class="faq-a" id="fa2" role="region" aria-labelledby="fq2"><div><p>Rp25.000 per rasa, untuk Matcha, Tiramisu, Chocolate, dan Strawberry.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa3" id="fq3">Bagaimana pembayaran dan ongkos kirim?</button><div class="faq-a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Detail pembayaran dan pengiriman akan dikonfirmasi lewat WhatsApp.</p></div></div></div><div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa4" id="fq4">Berapa berat dan apa komposisinya?</button><div class="faq-a" id="fa4" role="region" aria-labelledby="fq4"><div><p>Informasi ini akan ditambahkan setelah dikonfirmasi. Tanyakan lewat WhatsApp jika perlu.</p></div></div></div></div></div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/products.js"></script><script src="js/main.js"></script><script src="js/order.js"></script>
+</body>
+</html>
